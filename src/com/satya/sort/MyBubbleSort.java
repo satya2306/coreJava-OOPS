@@ -2,7 +2,7 @@ package com.satya.sort;
 
 public class MyBubbleSort {
 	  
-    // logic to sort the elements
+    // logic to sort the elements in array
     public static void bubble_srt(int array[]) {
         int n = array.length;
         int k;
