@@ -24,7 +24,7 @@ public class Implementation {
    */
   try {
    FileOutputStream fileOutputStream = new FileOutputStream(
-     "serialObject.ser");
+     "satyaserialiseobj.ser");
    ObjectOutputStream objectOutputStream = new ObjectOutputStream(
      fileOutputStream);
    objectOutputStream.writeObject(man);
@@ -44,7 +44,7 @@ public class Implementation {
 
   try {
    FileInputStream fileInputStream = new FileInputStream(
-     "serialobject.ser");
+     "satyaserialiseobj.ser");
    ObjectInputStream inputStream = new ObjectInputStream(
      fileInputStream);
    manout = (Man) inputStream.readObject();
@@ -68,6 +68,7 @@ public class Implementation {
   System.out.println("Color: " + manout.getColor());
   System.out.println("Name: " + manout.getName());
   System.out.println("Address: " + manout.getAddress());
+  System.out.println("State: " + manout.getState().getState());
 
  }
 
