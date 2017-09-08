@@ -2,7 +2,7 @@ package com.satya.core.serialisable;
 
 import java.io.Serializable;
 
-public class Address  {
+public class Address implements Serializable {
 	
 	private String state;
 
